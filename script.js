@@ -41,7 +41,7 @@ class WebSocketClickCounter {
 
   connectWebSocket() {
     const wsUrl = `ws://${IP}:${PORT}`;
-    this.socket = new WebSocket(wsUrl);
+    this.socket = new WebSocket("https://supawish-github-io.onrender.com");
 
     this.socket.onopen = () => {
       this.isConnected = true;
